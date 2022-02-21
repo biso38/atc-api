@@ -132,7 +132,7 @@ $app->post('/aircrafts/add',function ($request,$responce,$args) {
     }
 });
 
-// dequeue air craft by order
+// dequeue air craft by order 
 $app->post('/aircrafts/dequeue/',function ($request,$responce,$args) {
     // select lowest piroirty and lowest id as first come 
     $sql="SELECT * FROM aircrafts WHERE status = 'standby'
